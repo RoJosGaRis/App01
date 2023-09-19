@@ -20,5 +20,9 @@ struct BookSeries: Hashable, Codable, Identifiable{
         var name: String
         var year: Int
         var pages: Int
+        var bookImageName: String
+        var bookImage: Image {
+            Image(bookImageName)
+        }
     }
 }

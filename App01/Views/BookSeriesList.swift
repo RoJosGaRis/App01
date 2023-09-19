@@ -9,9 +9,9 @@ import SwiftUI
 
 struct BookSeriesList: View {
     var body: some View {
-        List(books){
-            book in
-            Text("Si")
+        List(bookSeries){
+            bookSerie in
+            BookSeriesRow(bookSeries: bookSerie)
         }
     }
 }

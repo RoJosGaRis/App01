@@ -1,45 +1,51 @@
 [
     {
-        "id": 1
-        "name": "Serie 1",
-        "writer": "Escritor 1",
+        "id": 1,
+        "name": "LOTR",
+        "writer": "Tolkien",
         "books": [
                 {
-                    "name": "libro1",
+                    "name": "Fellowship of the Ring",
                     "year": 2003,
-                    "pages": 700
+                    "pages": 700,
+                    "bookImageName": "LOTR_Fellowship"
                 },
                 {
-                    "name": "libro2",
+                    "name": "The Two Towers",
                     "year": 2004,
-                    "pages": 800
+                    "pages": 800,
+                    "bookImageName": "LOTR_Towers"
                 },
                 {
-                    "name": "libro3",
+                    "name": "Return of The King",
                     "year": 2005,
-                    "pages": 900
+                    "pages": 900,
+                    "bookImageName": "LOTR_Return"
                 }
         ]
     },
     {
-        "id": 2
-        "name": "Serie 2",
-        "writer": "Escritor 2",
+        "id": 2,
+        "name": "Archivo de las Tormentas",
+        "writer": "Brandon Sanderson",
         "books": [
                 {
-                    "name": "libro4",
+                    "name": "The Way of Kings",
                     "year": 2006,
-                    "pages": 700
+                    "pages": 700,
+                    "bookImageName": "SLA_WayOfKings"
                 },
                 {
-                    "name": "libro5",
+                    "name": "Words of Radiance",
                     "year": 2007,
-                    "pages": 800
+                    "pages": 800,
+                    "bookImageName": "SLA_WordsRadiance"
                 },
                 {
-                    "name": "libro6",
+                    "name": "Oathbringer",
                     "year": 2008,
-                    "pages": 900
+                    "pages": 900,
+                    "bookImageName": "SLA_Oathbringer"
                 }
         ]
     }
