@@ -9,10 +9,18 @@ import SwiftUI
 
 struct BookSeriesList: View {
     var body: some View {
-        List(bookSeries){
-            bookSerie in
-            BookSeriesRow(bookSeries: bookSerie)
-        }
+        ZStack{
+            Color(.black)
+            
+            ScrollView(.vertical) {
+                VStack {
+                    ForEach(bookSeries, id:\.self){
+                        bookSerie in
+                        BookSeriesRow(bookSeries: bookSerie)
+                    }
+                }
+            }
+        }.ignoresSafeArea()
     }
 }
 

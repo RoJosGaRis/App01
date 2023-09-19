@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name": "LOTR",
+        "name": "Lord of the Rings",
         "writer": "Tolkien",
         "books": [
                 {
