@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1
+        "name": "Serie 1",
+        "writer": "Escritor 1",
+        "books": [
+                {
+                    "name": "libro1",
+                    "year": 2003,
+                    "pages": 700
+                },
+                {
+                    "name": "libro2",
+                    "year": 2004,
+                    "pages": 800
+                },
+                {
+                    "name": "libro3",
+                    "year": 2005,
+                    "pages": 900
+                }
+        ]
+    },
+    {
+        "id": 2
+        "name": "Serie 2",
+        "writer": "Escritor 2",
+        "books": [
+                {
+                    "name": "libro4",
+                    "year": 2006,
+                    "pages": 700
+                },
+                {
+                    "name": "libro5",
+                    "year": 2007,
+                    "pages": 800
+                },
+                {
+                    "name": "libro6",
+                    "year": 2008,
+                    "pages": 900
+                }
+        ]
+    }
+]
