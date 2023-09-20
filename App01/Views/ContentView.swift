@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let booksSeries = BooksViewModel().booksSeries
+    
     var body: some View {
-        BookSeriesList()
+        ZStack{
+            Color(.black).ignoresSafeArea()
+            BookSeriesList(booksSeries: booksSeries)
+        }
     }
 }
 

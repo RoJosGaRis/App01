@@ -8,27 +8,31 @@
 import SwiftUI
 
 struct BookSeriesRow: View {
-    var bookSeries: BookSeries
+    var booksSeries: BookSeries
     
     var body: some View {
-        let bookCount = bookSeries.books.count
+        let bookCount = booksSeries.books.count
         VStack{
-            Text(bookSeries.name).font(.title).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).bold()
+            Text(booksSeries.name).font(.title).frame(minWidth: 0, maxWidth: .infinity, alignment: .leading).bold()
             HStack{
-                Text(bookSeries.writer).frame(maxWidth: .infinity, alignment: .leading)
+                Text(booksSeries.writer).frame(maxWidth: .infinity, alignment: .leading)
                 Text("Libros: \(bookCount)")
             }
         }
-        .padding().foregroundColor(.white).background(Color.red.opacity(0.3))
+        .padding()
+        .foregroundColor(.white)
+        .background(Color.red)
+        .cornerRadius(25)
+        .overlay(
+            RoundedRectangle(cornerRadius: 25)
+                .stroke(Color.red, lineWidth: 2)
+        )
             
     }
 }
 
 struct BookSeriesRow_Previews: PreviewProvider {
     static var previews: some View {
-        ZStack{
-            Color(.black)
-            BookSeriesRow(bookSeries: bookSeries[1])
-        }
+        ContentView()
     }
 }

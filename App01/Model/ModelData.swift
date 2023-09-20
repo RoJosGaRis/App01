@@ -6,8 +6,31 @@
 //
 
 import Foundation
+import SwiftUI
 
-var bookSeries: [BookSeries] = load("bookData.json")
+//var bookSeries: [BookSeries] = load("bookData.json")
+
+class BooksViewModel : ObservableObject{
+    @Published var booksSeries = [BookSeries]()
+    
+    init(){
+        getBooks()
+    }
+    
+    func getBooks(){
+        if let url = Bundle.main.url(forResource: "bookData", withExtension: ".json"){
+            do {
+                let data = try Data(contentsOf: url)
+                let decoder = JSONDecoder()
+                self.booksSeries = try decoder.decode([BookSeries].self, from: data)
+            } catch {
+                print("Error loading and decoding JSON: \(error)")
+            }
+        } else {
+            print("JSON file not found")
+        }
+    }
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

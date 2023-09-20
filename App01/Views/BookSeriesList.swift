@@ -8,24 +8,31 @@
 import SwiftUI
 
 struct BookSeriesList: View {
+    
+    var booksSeries: [BookSeries]
+    
     var body: some View {
-        ZStack{
-            Color(.black)
-            
-            ScrollView(.vertical) {
+        NavigationView {
+            ScrollView{
                 VStack {
-                    ForEach(bookSeries, id:\.self){
+                    ForEach(booksSeries, id:\.self){
                         bookSerie in
-                        BookSeriesRow(bookSeries: bookSerie)
+                        NavigationLink{
+                            BooksList(books: bookSerie.books)
+                        } label: {
+                            BookSeriesRow(booksSeries: bookSerie)
+                        }
+                        
                     }
                 }
-            }
-        }.ignoresSafeArea()
+            }.padding().background(Color.red.opacity(0.5))
+        }.navigationTitle("Books Series")
+        
     }
 }
 
 struct BookSeriesList_Previews: PreviewProvider {
     static var previews: some View {
-        BookSeriesList()
+        ContentView()
     }
 }

@@ -19,6 +19,9 @@
 		FB08FB972ABA1878005ADBF5 /* BookSeriesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08FB962ABA1878005ADBF5 /* BookSeriesRow.swift */; };
 		FB08FB992ABA1969005ADBF5 /* BookSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08FB982ABA1969005ADBF5 /* BookSeries.swift */; };
 		FB08FB9C2ABA1A90005ADBF5 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08FB9B2ABA1A90005ADBF5 /* ModelData.swift */; };
+		FBD547992ABB887200016EFE /* BooksList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD547982ABB887200016EFE /* BooksList.swift */; };
+		FBD5479B2ABB8BB600016EFE /* BookDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5479A2ABB8BB600016EFE /* BookDetails.swift */; };
+		FBD5479D2ABB8C0A00016EFE /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD5479C2ABB8C0A00016EFE /* Book.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		FB08FB962ABA1878005ADBF5 /* BookSeriesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeriesRow.swift; sourceTree = "<group>"; };
 		FB08FB982ABA1969005ADBF5 /* BookSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookSeries.swift; sourceTree = "<group>"; };
 		FB08FB9B2ABA1A90005ADBF5 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		FBD547982ABB887200016EFE /* BooksList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksList.swift; sourceTree = "<group>"; };
+		FBD5479A2ABB8BB600016EFE /* BookDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetails.swift; sourceTree = "<group>"; };
+		FBD5479C2ABB8C0A00016EFE /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +151,8 @@
 				FB08FB692ABA1238005ADBF5 /* ContentView.swift */,
 				FB08FB932ABA1834005ADBF5 /* BookSeriesList.swift */,
 				FB08FB962ABA1878005ADBF5 /* BookSeriesRow.swift */,
+				FBD547982ABB887200016EFE /* BooksList.swift */,
+				FBD5479A2ABB8BB600016EFE /* BookDetails.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +162,7 @@
 			children = (
 				FB08FB982ABA1969005ADBF5 /* BookSeries.swift */,
 				FB08FB9B2ABA1A90005ADBF5 /* ModelData.swift */,
+				FBD5479C2ABB8C0A00016EFE /* Book.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,10 +298,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD547992ABB887200016EFE /* BooksList.swift in Sources */,
 				FB08FB992ABA1969005ADBF5 /* BookSeries.swift in Sources */,
 				FB08FB972ABA1878005ADBF5 /* BookSeriesRow.swift in Sources */,
 				FB08FB6A2ABA1238005ADBF5 /* ContentView.swift in Sources */,
 				FB08FB682ABA1238005ADBF5 /* App01App.swift in Sources */,
+				FBD5479D2ABB8C0A00016EFE /* Book.swift in Sources */,
+				FBD5479B2ABB8BB600016EFE /* BookDetails.swift in Sources */,
 				FB08FB942ABA1834005ADBF5 /* BookSeriesList.swift in Sources */,
 				FB08FB9C2ABA1A90005ADBF5 /* ModelData.swift in Sources */,
 			);
