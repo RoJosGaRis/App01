@@ -9,12 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let booksSeries = BooksViewModel().booksSeries
+    @StateObject var booksSeries = BooksViewModel()
     
     var body: some View {
         ZStack{
             Color(.black).ignoresSafeArea()
-            BookSeriesList(booksSeries: booksSeries)
+            BookSeriesList(booksSeries: booksSeries.booksSeries)
         }
     }
 }

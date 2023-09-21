@@ -15,6 +15,4 @@ struct BookSeries: Hashable, Codable, Identifiable{
     var writer: String
     
     var books:[bookForm]
-    
-    
 }

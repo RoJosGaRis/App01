@@ -16,4 +16,5 @@ struct bookForm:Hashable, Codable{
     var bookImage: Image {
         Image(bookImageName)
     }
+    var goodReadsLink: String
 }

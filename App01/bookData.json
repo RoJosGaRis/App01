@@ -8,19 +8,22 @@
                     "name": "Fellowship of the Ring",
                     "year": 2003,
                     "pages": 700,
-                    "bookImageName": "LOTR_Fellowship"
+                    "bookImageName": "LOTR_Fellowship",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/61215351-the-fellowship-of-the-ring?from_search=true&from_srp=true&qid=cO0HZC3mA3&rank=1"
                 },
                 {
                     "name": "The Two Towers",
                     "year": 2004,
                     "pages": 800,
-                    "bookImageName": "LOTR_Towers"
+                    "bookImageName": "LOTR_Towers",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/61215372-the-two-towers?ref=nav_sb_ss_1_14"
                 },
                 {
                     "name": "Return of The King",
                     "year": 2005,
                     "pages": 900,
-                    "bookImageName": "LOTR_Return"
+                    "bookImageName": "LOTR_Return",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/61215384-the-return-of-the-king?ref=nav_sb_ss_1_7"
                 }
         ]
     },
@@ -33,19 +36,51 @@
                     "name": "The Way of Kings",
                     "year": 2006,
                     "pages": 700,
-                    "bookImageName": "SLA_WayOfKings"
+                    "bookImageName": "SLA_WayOfKings",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/7235533-the-way-of-kings?ref=nav_sb_ss_1_10"
                 },
                 {
                     "name": "Words of Radiance",
                     "year": 2007,
                     "pages": 800,
-                    "bookImageName": "SLA_WordsRadiance"
+                    "bookImageName": "SLA_WordsRadiance",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/17332218-words-of-radiance?ref=nav_sb_ss_2_6"
+                    
                 },
                 {
                     "name": "Oathbringer",
                     "year": 2008,
                     "pages": 900,
-                    "bookImageName": "SLA_Oathbringer"
+                    "bookImageName": "SLA_Oathbringer",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/34002132-oathbringer?ref=nav_sb_ss_1_11"
+                }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Juegos del Hambre",
+        "writer": "Suzanne Collins",
+        "books": [
+                {
+                    "name": "Hunger Games",
+                    "year": 2006,
+                    "pages": 700,
+                    "bookImageName": "HG_Games",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/2767052-the-hunger-games?ref=nav_sb_ss_1_6"
+                },
+                {
+                    "name": "Catching Fire",
+                    "year": 2007,
+                    "pages": 800,
+                    "bookImageName": "HG_Catching",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/6148028-catching-fire?ref=nav_sb_ss_1_7"
+                },
+                {
+                    "name": "Mockingjay",
+                    "year": 2008,
+                    "pages": 900,
+                    "bookImageName": "HG_Mockingjay",
+                    "goodReadsLink": "https://www.goodreads.com/book/show/7260188-mockingjay?ref=nav_sb_ss_2_7"
                 }
         ]
     }

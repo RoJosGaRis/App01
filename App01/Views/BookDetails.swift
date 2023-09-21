@@ -27,6 +27,12 @@ struct BookDetails: View {
                     Text("Published: ").font(.title2).foregroundColor(.white)
                     Text(String(book.year)).bold()
                 }
+                Link(
+                    destination: URL(string: book.goodReadsLink)!){
+                        ZStack{
+                            Image(systemName: "book").foregroundColor(.white)
+                        }.padding().background(Color.black).clipShape(Circle())
+                    }
             }.padding()
             
             
