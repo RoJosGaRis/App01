@@ -12,13 +12,21 @@ struct ContentView: View {
     @StateObject var classList = ClassViewModel()
     
     var body: some View {
-        List{
-            Text("hola")
-        }.task {
-            do{
-                try await classList.getClassData()
-            } catch {
-                print("error")
+        NavigationView{
+            List(classList.classArray){
+                classInfo in
+                NavigationLink{
+                    ClassDetailsView(searchUrl: classInfo.url)
+                } label: {
+                    Text(classInfo.name)
+                }
+                
+            }.task {
+                do{
+                    try await classList.getClassData()
+                } catch {
+                    print("error")
+                }
             }
         }
     }

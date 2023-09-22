@@ -10,9 +10,9 @@ import SwiftUI
 
 struct ResultsModel : Decodable, Identifiable {
     var id = UUID()
-    var index : String
-    var name : String
-    var url : String
+    var index : String = " "
+    var name : String = " "
+    var url : String = " "
     
     enum CodingKeys : String, CodingKey {
         case index
@@ -21,8 +21,13 @@ struct ResultsModel : Decodable, Identifiable {
     }
 }
 
+struct ClassDetails : Decodable {
+    var hit_die:Int = 0
+    var proficiencies: [ResultsModel] = [ResultsModel]()
+}
+
 struct ClassModel : Decodable {
-    var count : String
+    var count : Int
     var results : [ResultsModel]
     
     enum CodingKeys : String, CodingKey {
