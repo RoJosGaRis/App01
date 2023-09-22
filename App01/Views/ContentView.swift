@@ -9,12 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var booksSeries = BooksViewModel()
+    @StateObject var classList = ClassViewModel()
     
     var body: some View {
-        ZStack{
-            Color(.black).ignoresSafeArea()
-            BookSeriesList(booksSeries: booksSeries.booksSeries)
+        List{
+            Text("hola")
+        }.task {
+            do{
+                try await classList.getClassData()
+            } catch {
+                print("error")
+            }
         }
     }
 }
