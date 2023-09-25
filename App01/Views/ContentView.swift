@@ -31,11 +31,11 @@ struct ContentView: View {
                         
                         ForEach(classList.classArray){
                             classInfo in
-                            NavigationLink(classInfo.name, value: classInfo.url)
+                            NavigationLink(classInfo.name, value: classInfo.url).font(.title).padding().foregroundColor(.white).border(Color.black).frame(width: UIScreen.main.bounds.width)
                         }.navigationDestination(for: String.self){
                             textValue in
                             ClassDetailsView(searchUrl: textValue)
-                        }.navigationTitle("Classes").
+                        }.navigationTitle("Classes")
                             .navigationBarTitleDisplayMode(.inline)
                     }
                 }
