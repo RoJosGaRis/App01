@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct ResultsModel : Decodable, Identifiable {
+struct ResultsModel : Decodable, Identifiable{
     var id = UUID()
     var index : String = " "
     var name : String = " "

@@ -52,6 +52,7 @@
 		FB3FB15C2ABE0AEF0099613E /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
 		FB3FB1602ABE17C40099613E /* ClassDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsViewModel.swift; sourceTree = "<group>"; };
 		FB3FB1622ABE18D80099613E /* ClassDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsView.swift; sourceTree = "<group>"; };
+		FBD0A21C2AC23A26007C8BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +103,7 @@
 		FB08FB662ABA1238005ADBF5 /* App01 */ = {
 			isa = PBXGroup;
 			children = (
+				FBD0A21C2AC23A26007C8BD4 /* Info.plist */,
 				FB08FB672ABA1238005ADBF5 /* App01App.swift */,
 				FB08FB9A2ABA1A73005ADBF5 /* Model */,
 				FB08FB952ABA1842005ADBF5 /* Views */,
@@ -140,8 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				FB08FB692ABA1238005ADBF5 /* ContentView.swift */,
-				FB3FB15A2ABE0AD70099613E /* ClassViewModel.swift */,
-				FB3FB1602ABE17C40099613E /* ClassDetailsViewModel.swift */,
 				FB3FB1622ABE18D80099613E /* ClassDetailsView.swift */,
 			);
 			path = Views;
@@ -150,6 +150,8 @@
 		FB08FB9A2ABA1A73005ADBF5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FB3FB1602ABE17C40099613E /* ClassDetailsViewModel.swift */,
+				FB3FB15A2ABE0AD70099613E /* ClassViewModel.swift */,
 				FB3FB15C2ABE0AEF0099613E /* ClassModel.swift */,
 			);
 			path = Model;
@@ -451,6 +453,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App01/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -479,6 +482,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App01/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = App01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
