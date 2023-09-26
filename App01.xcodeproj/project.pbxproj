@@ -18,6 +18,7 @@
 		FB3FB15D2ABE0AEF0099613E /* ClassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FB15C2ABE0AEF0099613E /* ClassModel.swift */; };
 		FB3FB1612ABE17C40099613E /* ClassDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FB1602ABE17C40099613E /* ClassDetailsViewModel.swift */; };
 		FB3FB1632ABE18D80099613E /* ClassDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3FB1622ABE18D80099613E /* ClassDetailsView.swift */; };
+		FBB254352AC3602000AA14DF /* ClassesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB254342AC3602000AA14DF /* ClassesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FB3FB15C2ABE0AEF0099613E /* ClassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassModel.swift; sourceTree = "<group>"; };
 		FB3FB1602ABE17C40099613E /* ClassDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsViewModel.swift; sourceTree = "<group>"; };
 		FB3FB1622ABE18D80099613E /* ClassDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassDetailsView.swift; sourceTree = "<group>"; };
+		FBB254342AC3602000AA14DF /* ClassesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesView.swift; sourceTree = "<group>"; };
 		FBD0A21C2AC23A26007C8BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			children = (
 				FB08FB692ABA1238005ADBF5 /* ContentView.swift */,
 				FB3FB1622ABE18D80099613E /* ClassDetailsView.swift */,
+				FBB254342AC3602000AA14DF /* ClassesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				FB3FB15B2ABE0AD70099613E /* ClassViewModel.swift in Sources */,
 				FB3FB15D2ABE0AEF0099613E /* ClassModel.swift in Sources */,
 				FB08FB682ABA1238005ADBF5 /* App01App.swift in Sources */,
+				FBB254352AC3602000AA14DF /* ClassesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

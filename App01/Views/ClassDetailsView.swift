@@ -14,17 +14,21 @@ struct ClassDetailsView: View {
     @StateObject var classDetails = ClassDetailsViewModel()
     
     var body: some View {
+        ZStack{
+            
+            Color.red.ignoresSafeArea()
         VStack{
+            
             Text("Hit Die")
-            List{
-                Text("\(classDetails.classDetails.hit_die)")
-            }
-            .frame(maxHeight: 100)
+                List{
+                    Text("\(classDetails.classDetails.hit_die)").foregroundColor(.black).listRowBackground(Color.red)
+                }
+                .frame(maxHeight: 100).scrollContentBackground(.hidden).border(.black)
             
             Text("Proficiencies")
             List(classDetails.classDetails.proficiencies){proficiency in
-                Text(proficiency.name)
-            }
+                Text(proficiency.name).foregroundColor(.black).listRowBackground(Color.red)
+            }.scrollContentBackground(.hidden).border(.black)
         }
         .task {
             do{
@@ -34,7 +38,8 @@ struct ClassDetailsView: View {
             } catch {
                 print("error")
             }
-        }.padding()
+        }.padding().font(.title)
+        }
     }
 }
 
