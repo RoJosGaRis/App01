@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct ResultsModel : Decodable, Identifiable{
+struct ResultsDetailsModel : Decodable, Identifiable{
     var id = UUID()
     var index : String = " "
     var name : String = " "
@@ -22,14 +22,9 @@ struct ResultsModel : Decodable, Identifiable{
     }
 }
 
-struct ClassDetails : Decodable {
-    var hit_die:Int = 0
-    var proficiencies: [ResultsModel] = [ResultsModel]()
-}
-
-struct ClassModel : Decodable {
+struct ItemsModel : Decodable {
     var count : Int
-    var results : [ResultsModel]
+    var results : [ResultsDetailsModel]
     
     enum CodingKeys : String, CodingKey {
         case count

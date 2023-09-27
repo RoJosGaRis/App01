@@ -11,25 +11,22 @@ struct ClassesView: View {
     
     @StateObject var classList = ClassViewModel()
     
-    @State var currentColor = Color.red
-    
     init() {
         let navBarAppearance = UINavigationBarAppearance()
         navBarAppearance.configureWithOpaqueBackground()
-        navBarAppearance.backgroundColor = UIColor.black
-        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.red]
+        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.systemTeal]
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
     }
     
     var body: some View {
         NavigationStack{
             ZStack{
-                Color.red.ignoresSafeArea()
+                Color.teal.ignoresSafeArea()
                 VStack{
 
                         List(classList.classArray){
                             classInfo in
-                            NavigationLink(classInfo.name, value: classInfo.url).font(.title).padding().foregroundColor(.black).listRowBackground(Color.red).border(Color.black) }.navigationDestination(for: String.self){
+                            NavigationLink(classInfo.name, value: classInfo.url).font(.title).padding().foregroundColor(.white).listRowBackground(Color.teal).border(Color.white) }.navigationDestination(for: String.self){
                             textValue in
                             ClassDetailsView(searchUrl: textValue)
                         
