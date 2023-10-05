@@ -14,8 +14,8 @@
 		FB08FB792ABA1239005ADBF5 /* App01Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08FB782ABA1239005ADBF5 /* App01Tests.swift */; };
 		FB08FB832ABA1239005ADBF5 /* App01UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08FB822ABA1239005ADBF5 /* App01UITests.swift */; };
 		FB08FB852ABA1239005ADBF5 /* App01UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB08FB842ABA1239005ADBF5 /* App01UITestsLaunchTests.swift */; };
-		FB6856902ACF677A0028A58D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FB68568E2ACF677A0028A58D /* Experience.rcproject */; };
-		FB6856912ACF677A0028A58D /* PlanetasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB68568F2ACF677A0028A58D /* PlanetasView.swift */; };
+		FB6856932ACF6B6F0028A58D /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = FB6856922ACF6B6F0028A58D /* Experience.rcproject */; };
+		FB6856952ACF6B7C0028A58D /* PlanetasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6856942ACF6B7C0028A58D /* PlanetasView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,8 +46,8 @@
 		FB08FB7E2ABA1239005ADBF5 /* App01UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = App01UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB08FB822ABA1239005ADBF5 /* App01UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App01UITests.swift; sourceTree = "<group>"; };
 		FB08FB842ABA1239005ADBF5 /* App01UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App01UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		FB68568E2ACF677A0028A58D /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
-		FB68568F2ACF677A0028A58D /* PlanetasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetasView.swift; sourceTree = "<group>"; };
+		FB6856922ACF6B6F0028A58D /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		FB6856942ACF6B7C0028A58D /* PlanetasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetasView.swift; sourceTree = "<group>"; };
 		FBD0A21C2AC23A26007C8BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,8 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				FB08FB692ABA1238005ADBF5 /* ContentView.swift */,
-				FB68568E2ACF677A0028A58D /* Experience.rcproject */,
-				FB68568F2ACF677A0028A58D /* PlanetasView.swift */,
+				FB6856922ACF6B6F0028A58D /* Experience.rcproject */,
+				FB6856942ACF6B7C0028A58D /* PlanetasView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,10 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB6856912ACF677A0028A58D /* PlanetasView.swift in Sources */,
-				FB6856902ACF677A0028A58D /* Experience.rcproject in Sources */,
+				FB6856952ACF6B7C0028A58D /* PlanetasView.swift in Sources */,
 				FB08FB6A2ABA1238005ADBF5 /* ContentView.swift in Sources */,
 				FB08FB682ABA1238005ADBF5 /* App01App.swift in Sources */,
+				FB6856932ACF6B6F0028A58D /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,9 +443,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App01/Preview Content\"";
+				DEVELOPMENT_TEAM = B968BDSCM4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App01/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,9 +474,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"App01/Preview Content\"";
+				DEVELOPMENT_TEAM = B968BDSCM4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = App01/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

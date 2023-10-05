@@ -36,7 +36,7 @@
                                           "emphasisAnimationType" : "bounce",
                                           "iterations" : 1,
                                           "target" : [
-                                            "3788A5B5-0388-488A-8304-7B90FEBA6FAC"
+                                            "CE3FB59F-0C8C-4CDC-91FA-8D0AB842E5EE"
                                           ]
                                         },
                                         "name" : {
@@ -44,6 +44,33 @@
                                         }
                                       },
                                       "identifier" : "AE303515-B1B1-4E2D-A329-4C2DBB469FE3",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                },
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "axis" : [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "direction" : "clockwise",
+                                          "duration" : 1,
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "CE3FB59F-0C8C-4CDC-91FA-8D0AB842E5EE"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "spin"
+                                        }
+                                      },
+                                      "identifier" : "CC675527-18A7-41FE-AC06-026653C1D98B",
                                       "isEnabled" : true
                                     }
                                   ],
@@ -66,7 +93,7 @@
                       "identifier" : "61D34D3B-DB0B-46C3-8142-496A2082855F",
                       "isEnabled" : true,
                       "isLooping" : false,
-                      "isModal" : false,
+                      "isModal" : true,
                       "name" : "Behavior",
                       "triggers" : [
                         {
@@ -75,7 +102,7 @@
                               "configurationBox" : {
                                 "configuration" : {
                                   "target" : [
-                                    "3788A5B5-0388-488A-8304-7B90FEBA6FAC"
+                                    "CE3FB59F-0C8C-4CDC-91FA-8D0AB842E5EE"
                                   ]
                                 },
                                 "name" : "tapTarget"
@@ -101,68 +128,115 @@
               "material" : "concrete",
               "overrides" : {
                 "children" : {
-                  "4A213441-135C-450E-8EF8-1A4EAB267C1D" : {
+                  "4A213441-135C-450E-8EF8-1A4EAB267C1D" : null,
+                  "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
+                  "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
+                  "B9E82A80-384A-46D0-B431-90E35815954E" : {
                     "overrides" : {
-                      "arguments" : [
-                        [
-                          "material",
-                          {
-                            "typeName" : "String",
-                            "value" : "gold"
+                      "children" : {
+                        "USDScene" : {
+                          "overrides" : {
+                            "arguments" : [
+                              [
+                                "includeSceneScaling",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : false
+                                }
+                              ],
+                              [
+                                "subpath",
+                                {
+                                  "typeName" : "String",
+                                  "value" : ""
+                                }
+                              ],
+                              [
+                                "url",
+                                {
+                                  "typeName" : "String",
+                                  "value" : "model:0f5913b5604704cd4598bc9bf431d662\/toy_drummer_idle.usdz"
+                                }
+                              ],
+                              [
+                                "withDescendants",
+                                {
+                                  "typeName" : "Bool",
+                                  "value" : true
+                                }
+                              ]
+                            ],
+                            "factory" : {
+                              "identifier" : "com.apple.af.FileImportAssetFactory",
+                              "version" : "0.0"
+                            },
+                            "runtimeAttributes" : [
+                              [
+                                "RuntimeIdentifier",
+                                {
+                                  "typeName" : "UUID",
+                                  "value" : "7A58A07E-ABB5-4C66-BA0E-2A0548B82DA7"
+                                }
+                              ]
+                            ]
+                          },
+                          "transform" : {
+                            "matrix" : [
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              0.0099999997764825821,
+                              0,
+                              0,
+                              0,
+                              0,
+                              1
+                            ]
                           }
-                        ],
-                        [
-                          "type",
-                          {
-                            "typeName" : "String",
-                            "value" : "box"
-                          }
-                        ]
-                      ],
+                        }
+                      },
                       "factory" : {
-                        "identifier" : "com.apple.rc.af.CoreAssetFactories.PrimitiveShapeAssetFactory",
-                        "version" : "1.0"
+                        "identifier" : "com.apple.af.Group",
+                        "version" : "0.0"
                       },
                       "runtimeAttributes" : [
                         [
                           "RuntimeIdentifier",
                           {
                             "typeName" : "UUID",
-                            "value" : "3788A5B5-0388-488A-8304-7B90FEBA6FAC"
-                          }
-                        ],
-                        [
-                          "entityName",
-                          {
-                            "typeName" : "String",
-                            "value" : "Steel Box"
+                            "value" : "CE3FB59F-0C8C-4CDC-91FA-8D0AB842E5EE"
                           }
                         ]
                       ]
                     },
                     "transform" : {
                       "matrix" : [
-                        1,
+                        0.99999886751174927,
                         0,
-                        0,
-                        0,
-                        0,
-                        1,
-                        0,
-                        0,
+                        8.4288495827422594e-07,
                         0,
                         0,
                         1,
                         0,
                         0,
-                        0.05000000074505806,
+                        -8.4288495827422594e-07,
                         0,
+                        0.99999886751174927,
+                        0,
+                        0.0015935765113681555,
+                        0,
+                        6.068128666214534e-09,
                         1
                       ]
                     }
                   },
-                  "7F5F1ADC-E5E4-4EF5-A5B5-FC43B071FFA5" : null,
-                  "632E476F-1E55-4E30-9723-1C51DD2E8B89" : null,
                   "B91C7CA3-4AB1-4253-9A84-07383168A8A8" : null
                 },
                 "factory" : null,

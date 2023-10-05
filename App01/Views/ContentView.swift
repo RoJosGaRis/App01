@@ -10,15 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        TabView{
-            ClassesView().tabItem{
-                Label( "Classes", systemImage: "person.circle.fill").foregroundColor(.black)
-            }
-            
-            ItemsView().tabItem{
-                Label("Items", systemImage: "bag.fill").foregroundColor(.black)
-            }
-        }
+        PlanetasView()
     }
 }
 
