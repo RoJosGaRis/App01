@@ -8,8 +8,10 @@
 import SwiftUI
 
 class ClassDetailsViewModel: ObservableObject {
-
+    
     @Published var classDetails = ClassDetails()
+    @Published var isToggled = false
+    var currentClass = CurrentClass()
     
     func getClassDetails(searchUrl : String) async throws {
         guard let url = URL(string: searchUrl) else {
@@ -28,6 +30,12 @@ class ClassDetailsViewModel: ObservableObject {
         let results = try JSONDecoder().decode(ClassDetails.self, from: data)
         
         self.classDetails = results
+    }
+    
+    func saveToCoreData() {
+        if let context = CurrentClass?.managedObjectContext {
+            
+        }
     }
 }
 

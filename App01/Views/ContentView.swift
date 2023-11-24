@@ -8,24 +8,29 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    @Environment(\.managedObjectContext) var moc
     @StateObject var classList = ClassViewModel()
     
+    
     var body: some View {
-        NavigationView{
-            List(classList.classArray){
-                classInfo in
-                NavigationLink{
-                    ClassDetailsView(searchUrl: classInfo.url)
-                } label: {
-                    Text(classInfo.name)
-                }
-                
-            }.task {
-                do{
-                    try await classList.getClassData()
-                } catch {
-                    print("error")
+        VStack{
+            NavigationStack {
+                VStack {
+                    
+                    List(classList.classArray) {
+                        classInfo in
+                        NavigationLink {
+                            ClassDetailsView(searchUrl: classInfo.url)
+                        } label: {
+                            Text(classInfo.name)
+                        }
+                    }.task {
+                        do {
+                            try await classList.getClassData()
+                        } catch {
+                            print("error")
+                        }
+                    }
                 }
             }
         }

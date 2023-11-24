@@ -15,6 +15,9 @@ struct ClassDetailsView: View {
     
     var body: some View {
         VStack{
+            
+            // Here goes TOGGLE BUTTON
+            
             Text("Hit Die")
             List{
                 Text("\(classDetails.classDetails.hit_die)")
